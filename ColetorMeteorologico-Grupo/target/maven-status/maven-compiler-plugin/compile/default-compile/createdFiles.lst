@@ -1,0 +1,15 @@
+com\mycompany\coletormeteorologico\DAL\OpenMeteoResposta$Atual.class
+com\mycompany\coletormeteorologico\ColetorMeteorologico.class
+com\mycompany\coletormeteorologico\DAL\OpenMeteoResposta.class
+com\mycompany\coletormeteorologico\DAL\HibernateUtil.class
+com\mycompany\coletormeteorologico\DAL\Simulador$Cenario.class
+com\mycompany\coletormeteorologico\modelo\Controle.class
+com\mycompany\coletormeteorologico\DAL\Simulador.class
+com\mycompany\coletormeteorologico\DAL\FonteDados.class
+com\mycompany\coletormeteorologico\apresentacao\ConsoleColetor.class
+com\mycompany\coletormeteorologico\modelo\Validacao.class
+com\mycompany\coletormeteorologico\DAL\LeituraDAO.class
+com\mycompany\coletormeteorologico\DAL\OpenMeteoAPI.class
+com\mycompany\coletormeteorologico\modelo\Configuracao.class
+com\mycompany\coletormeteorologico\modelo\Agendador.class
+com\mycompany\coletormeteorologico\modelo\Leitura.class
