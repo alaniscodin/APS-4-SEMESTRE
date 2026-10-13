@@ -20,7 +20,8 @@ Downloads oficiais:
 
 ## 2. Instalar e configurar o SQL Server
 
-Na instalação do SQL Server Express, escolha a instalação Básica. Se houver opção de instância, este projeto espera a instância padrão **`MSSQLSERVER`**.
+- **Instância padrão** (`MSSQLSERVER`), não `SQLEXPRESS`. Se o instalador
+  perguntar, deixe a opção "Default instance".
 
 Confira estes três pontos:
 
