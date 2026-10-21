@@ -33,10 +33,8 @@ Os dois projetos precisam de **internet**: o coletor para consultar a API, e a
 página para baixar a biblioteca do gráfico (Chart.js).
 
 ---
-
 - **Instância padrão** (`MSSQLSERVER`), não `SQLEXPRESS`. Se o instalador
   perguntar, deixe a opção "Default instance".
->>>>>>> 4d905e81fb407f2f39f8fbb8f60234c7bf0883a6
 
 ## 2. Instalar o SQL Server
 
