@@ -11,7 +11,7 @@
         <property name="hibernate.connection.username">coletor</property>
 
         <!-- TROQUE pela sua senha. Remova antes de anexar o código na monografia. -->
-        <property name="hibernate.connection.password">1234ee</property>
+        <property name="hibernate.connection.password">SUA_SENHA_AQUI</property>
 
 
         <!-- validate: confere se a entidade bate com a tabela, mas nunca altera o banco -->

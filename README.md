@@ -1,8 +1,5 @@
 # Estação Meteorológica — como rodar na sua máquina
 
-APS 2026/2 — Ciência da Computação (UNIP). O sistema tem **duas aplicações
-separadas**, como pede o item 7 do enunciado:
-
 | Pasta | Aplicação | O que faz |
 |---|---|---|
 | `ColetorMeteorologico` | **1 — Coletor** | A cada 10 s consulta a API de previsão do tempo (Open-Meteo), valida os dados e grava no banco. |
