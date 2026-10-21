@@ -110,7 +110,7 @@ GO
 
 IF NOT EXISTS (SELECT 1 FROM sys.server_principals WHERE name = 'coletor')
 BEGIN
-    CREATE LOGIN coletor WITH PASSWORD = '1234aa';
+    CREATE LOGIN coletor WITH PASSWORD = 'TroqueEstaSenha2026!';
     PRINT 'Login coletor criado.';
 END
 ELSE

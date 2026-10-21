@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Configurações · Estação Climática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="resources/css/estacao.css"/>
+  <script src="resources/js/estacao.js"></script>
+</head>
+<body>
+  <main class="painel">
+    <header class="topo">
+      <h1>Estação Climática · Sorocaba/SP</h1>
+      <nav>
+        <a href="index.html">Painel</a>
+        <a class="ativo" href="configuracoes.html">Configurações</a>
+      </nav>
+    </header>
+
+    <form class="config" id="formConfig" onsubmit="return salvarConfig()">
+      <h2>Configurações</h2>
+      <p>Preferências de exibição deste navegador. A coleta em si (fonte, intervalo, local) é definida no coletor, em <code>coletor.properties</code>.</p>
+
+      <div class="duplo">
+        <div class="campo">
+          <label for="atualizacao">Atualizar a página a cada (segundos)</label>
+          <input id="atualizacao" type="number" min="5" max="300" value="10"/>
+        </div>
+        <div class="campo">
+          <label for="unidade">Unidade de temperatura</label>
+          <select id="unidade"><option value="C">Celsius (°C)</option><option value="F">Fahrenheit (°F)</option></select>
+        </div>
+      </div>
+
+      <div class="campo"><label>Variáveis exibidas no gráfico</label></div>
+      <div class="vars">
+        <label><input type="checkbox" id="serie-temperatura" checked="checked"/> Temperatura</label>
+        <label><input type="checkbox" id="serie-umidade" checked="checked"/> Umidade</label>
+        <label><input type="checkbox" id="serie-precipitacao" checked="checked"/> Precipitação</label>
+        <label><input type="checkbox" id="serie-vento" checked="checked"/> Vento</label>
+      </div>
+
+      <div class="botoes">
+        <button type="submit">Salvar configurações</button>
+        <button type="button" class="sec" onclick="restaurarConfig()">Restaurar padrão</button>
+      </div>
+      <div class="aviso" id="aviso" role="status">Configurações salvas.</div>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+com\mycompany\servidormeteorologico\apresentacao\ArquivosEstaticos.class
+com\mycompany\servidormeteorologico\apresentacao\RotasAPI.class
+com\mycompany\servidormeteorologico\DAL\LeituraDAO.class
+com\mycompany\servidormeteorologico\modelo\CondicaoTempo.class
+com\mycompany\servidormeteorologico\apresentacao\RotasAPI$1.class
+com\mycompany\servidormeteorologico\modelo\Controle$Falha.class
+com\mycompany\servidormeteorologico\modelo\Leitura.class
+com\mycompany\servidormeteorologico\modelo\Validacao.class
+com\mycompany\servidormeteorologico\DAL\HibernateUtil.class
+com\mycompany\servidormeteorologico\modelo\Controle.class
+com\mycompany\servidormeteorologico\ServidorMeteorologico.class
+com\mycompany\servidormeteorologico\modelo\ResumoDia.class

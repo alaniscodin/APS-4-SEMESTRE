@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Estação Climática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Dongle&family=Dosis:wght@200..800&display=swap">
+  <link rel="stylesheet" href="resources/css/estacao.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="resources/js/estacao.js"></script>
+</head>
+<body>
+  <main class="painel">
+    <header class="topo">
+      <h1>Estação Climática · Sorocaba/SP</h1>
+      <nav>
+        <a class="ativo" href="index.html">Painel</a>
+        <a href="configuracoes.html">Configurações</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-label="Condição atual">
+      <svg class="ondas" viewBox="0 0 1800 110" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 50 Q112 20 225 50 T450 50 T675 50 T900 50 T1125 50 T1350 50 T1575 50 T1800 50 V110 H0Z" fill="#DCEFE7"/>
+        <path d="M0 70 Q112 42 225 70 T450 70 T675 70 T900 70 T1125 70 T1350 70 T1575 70 T1800 70 V110 H0Z" fill="#B8DCCD"/>
+      </svg>
+      <div class="temp"><span id="temp">--</span><small id="unidadeTemp">°C</small></div>
+      <div class="cond" id="cond">--</div>
+      <div class="sens" id="sensacao"></div>
+      <div class="local">Sorocaba, SP · Brasil <span class="selo" id="origem" hidden></span></div>
+      <div class="icone" id="icone"></div>
+      <div class="hora"><strong id="hora">--:--:--</strong><span id="data">--</span></div>
+    </section>
+
+    <section class="grade">
+      <div class="cartoes">
+        <div class="cartao umid"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3C8 8 6 11 6 14a6 6 0 0 0 12 0c0-3-2-6-6-11z"/></svg></span>
+          <div><div class="rot">Umidade</div><div class="val" id="umidade">--</div></div></div>
+        <div class="cartao pres"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 12l4-3"/></svg></span>
+          <div><div class="rot">Pressão</div><div class="val" id="pressao">--</div></div></div>
+        <div class="cartao vento"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 9h11a3 3 0 1 0-3-3M3 15h15a3 3 0 1 1-3 3"/></svg></span>
+          <div><div class="rot">Vento</div><div class="val" id="vento">--</div></div></div>
+        <div class="cartao chuva"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 15a4 4 0 1 1 1-7.9A5 5 0 0 1 18 9a3 3 0 0 1 0 6zM9 19l-1 2M13 19l-1 2M17 19l-1 2"/></svg></span>
+          <div><div class="rot">Precipitação</div><div class="val" id="chuva">--</div></div></div>
+        <div class="resumo"><span>Leituras com chuva hoje<small id="resumoTemp">Aguardando leitura…</small></span><strong id="resumoChuva">--</strong></div>
+      </div>
+      <div class="grafico">
+        <h2 id="tituloGrafico">Variáveis em domínio do tempo</h2>
+        <canvas id="grafico"></canvas>
+      </div>
+    </section>
+
+    <div class="estado" role="status"><span class="ponto" id="ponto"></span><span id="estado">Conectando ao servidor…</span></div>
+  </main>
+</body>
+</html>

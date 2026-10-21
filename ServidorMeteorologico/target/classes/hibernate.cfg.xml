@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=estacao_meteorologica;encrypt=false</property>
+        <property name="hibernate.connection.username">coletor</property>
+
+        <!-- TROQUE pela sua senha. Remova antes de anexar o código na monografia. -->
+        <property name="hibernate.connection.password">1234ee</property>
+
+
+        <!-- validate: confere se a entidade bate com a tabela, mas nunca altera o banco -->
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+
+        <!-- false: são 8.640 inserções por dia, o log viraria ruído -->
+        <property name="hibernate.show_sql">false</property>
+
+        <mapping class="com.mycompany.servidormeteorologico.modelo.Leitura"/>
+
+    </session-factory>
+</hibernate-configuration>
