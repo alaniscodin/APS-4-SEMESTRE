@@ -156,7 +156,7 @@ function mostrarResumo(r) {
 function criarGrafico() {
   var cv = document.getElementById('grafico'); if (!cv) return;
   if (typeof Chart === 'undefined') { estado('erro', 'Não foi possível carregar o Chart.js (sem internet?). Os valores continuam sendo exibidos.'); return; }
-  function serie(n, c, eixo, fill, chave) { return { label: n, data: [], borderColor: c, backgroundColor: c + '33', fill: fill, tension: .4, pointRadius: 2, borderWidth: 6, yAxisID: eixo, hidden: !cfg.series[chave] }; }
+  function serie(n, c, eixo, fill, chave) { return { label: n, data: [], borderColor: c, backgroundColor: c + '1A', fill: fill, tension: .25, pointRadius: 0, pointHoverRadius: 4, pointHitRadius: 10, borderWidth: 2, borderJoinStyle: 'round', yAxisID: eixo, hidden: !cfg.series[chave] }; }
   grafico = new Chart(cv, { type: 'line',
     data: { labels: [], datasets: [serie('Temperatura (°' + cfg.unidade + ')', '#CD5C5C', 'y', true, 'temperatura'), serie('Umidade (%)', '#7FBFA5', 'y1', false, 'umidade'),
                                    serie('Vento (km/h)', '#F3B266', 'y', false, 'vento'), serie('Precipitação (mm)', '#E99055', 'y', false, 'precipitacao')] },
